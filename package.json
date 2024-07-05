@@ -15,19 +15,22 @@
 		"test:unit": "vitest"
 	},
 	"devDependencies": {
-		"@ngneat/falso": "^7.2.0",
 		"@playwright/test": "^1.45.1",
 		"@sveltejs/adapter-auto": "^3.2.2",
 		"@sveltejs/kit": "^2.5.18",
 		"@sveltejs/vite-plugin-svelte": "^3.1.1",
+		"@types/bun": "^1.1.6",
+		"@types/cookie": "^0.6.0",
 		"@types/eslint": "^8.56.10",
+		"@types/markdown-it": "^14.1.1",
 		"eslint": "^9.6.0",
 		"eslint-config-prettier": "^9.1.0",
 		"eslint-plugin-svelte": "^2.41.0",
 		"globals": "^15.8.0",
 		"prettier": "^3.3.2",
 		"prettier-plugin-svelte": "^3.2.5",
-		"svelte": "5.0.0-next.172",
+		"sass": "^1.77.6",
+		"svelte": "5.0.0-next.174",
 		"svelte-check": "^3.8.4",
 		"tslib": "^2.6.3",
 		"typescript": "^5.5.3",
@@ -37,6 +40,10 @@
 	},
 	"type": "module",
 	"dependencies": {
-		"@linketysplit/linketysplit-js": "npm:@jsr/linketysplit__linketysplit-js@^0.1.9"
+		"@linketysplit/linketysplit-js": "npm:@jsr/linketysplit__linketysplit-js@^0.1.12",
+		"@ngneat/falso": "^7.2.0",
+		"@sindresorhus/slugify": "^2.2.1",
+		"bootstrap": "^5.3.3",
+		"jose": "^5.6.3"
 	}
 }
