@@ -1,15 +1,15 @@
-import { fail, redirect } from "@sveltejs/kit";
-import type { Actions, PageServerLoadEvent, RequestEvent } from "./$types";
-import { login } from "$lib/auth/auth.server";
-import { SUB_REDIRECT_KEY } from "./shared";
+import { fail, redirect } from '@sveltejs/kit';
+import type { Actions, PageServerLoadEvent, RequestEvent } from './$types';
+import { login } from '$lib/auth/auth.server';
+import { SUB_REDIRECT_KEY } from './shared';
 
 const subscribe = async (event: RequestEvent) => {
   const fd = await event.request.formData();
 
-  const data: {name: string, email: string} = {
+  const data: { name: string; email: string } = {
     name: ((fd.get('name') as string) || '').trim(),
-    email:  ((fd.get('email') as string) || '').trim()
-  }
+    email: ((fd.get('email') as string) || '').trim()
+  };
   const errors: { [key: string]: string } = {};
   if (!data.name) {
     errors['name'] = 'Please enter your name';
@@ -31,8 +31,7 @@ const subscribe = async (event: RequestEvent) => {
   });
 
   throw redirect(303, redirectUrl);
-
-}
+};
 
 export const load = async (event: PageServerLoadEvent) => {
   const subRedirect = event.url.searchParams.get(SUB_REDIRECT_KEY);
@@ -42,11 +41,11 @@ export const load = async (event: PageServerLoadEvent) => {
       httpOnly: true,
       sameSite: 'lax',
       secure: true
-    })
+    });
   }
-  return {}
-}
+  return {};
+};
 
 export const actions: Actions = {
   default: subscribe
-}
+};

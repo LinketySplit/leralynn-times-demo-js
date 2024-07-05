@@ -2,7 +2,6 @@
   import '../app.scss';
   let { children, data } = $props();
   let user = $derived(data.user);
-  
 </script>
 
 <form id="sign-out-form" method="POST" action="/sign-out"></form>
@@ -21,7 +20,6 @@
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      
       <ul class="navbar-nav ms-auto">
         {#if user}
           {@const firstName = user.name.split(' ')[0]}
@@ -36,7 +34,7 @@
             <ul class="dropdown-menu dropdown-menu-end">
               <li>
                 <h6 class="dropdown-header">
-                  {user.name} <br /> 
+                  {user.name} <br />
                   <small>{user.email}</small>
                 </h6>
               </li>

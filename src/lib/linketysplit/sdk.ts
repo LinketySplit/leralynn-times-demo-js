@@ -11,4 +11,4 @@ export const getLinketySplitSDK = (): PublicationSDK => {
     return new SDKDev(LINKETYSPLIT_API_KEY);
   }
   return new PublicationSDK(LINKETYSPLIT_API_KEY);
-}
+};

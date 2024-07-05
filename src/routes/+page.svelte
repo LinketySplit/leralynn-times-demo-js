@@ -17,11 +17,18 @@
           <p><small>Published {dfmt}</small></p>
           <p class="lead">{article.description}</p>
           <p>
-            <a class="btn btn-primary stretched-link" href={`/articles/${article.slug}`}>Read</a>
+            <a
+              class="btn btn-primary stretched-link"
+              href={`/articles/${article.slug}`}>Read</a
+            >
           </p>
         </div>
         <div class="col-4">
-          <img class="img-fluid" src={`/images/${article.slug}.jpg`} alt={article.title} />
+          <img
+            class="img-fluid"
+            src={`/images/${article.slug}.jpg`}
+            alt={article.title}
+          />
         </div>
       </div>
     </article>
@@ -29,7 +36,6 @@
 
   <nav aria-label="...">
     <ul class="pagination">
-     
       <li class="page-item" class:disabled={page <= 1}>
         <a class="page-link" href={`?page=${page - 1}`}>Previous</a>
       </li>
@@ -38,6 +44,4 @@
       </li>
     </ul>
   </nav>
-
- 
 </main>

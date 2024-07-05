@@ -3,6 +3,5 @@ export type Article = {
   description: string;
   slug: string;
   publishedDate: string;
-  content: string[]
-
-}
+  content: string[];
+};
