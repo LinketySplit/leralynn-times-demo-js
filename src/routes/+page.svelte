@@ -6,6 +6,14 @@
   let pageCount = $derived(data.pageCount);
 </script>
 
+<svelte:head>
+  <meta
+    name="linketysplit-domain"
+    content="3e6eb0871d3a646c2558d89e88324ca1b20098e3bfb72509bcc4344ab183a5c6"
+  />
+  <title>The Leralynn Times - All the new that's fit to print on Leralynn Street</title>
+</svelte:head>
+
 <main class="container my-5">
   {#each postsOnPage as article}
     {@const d = new Date(article.publishedDate)}
