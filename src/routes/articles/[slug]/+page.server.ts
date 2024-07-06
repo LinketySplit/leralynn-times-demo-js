@@ -16,10 +16,21 @@ export const load = async (event: PageServerLoadEvent) => {
     undefined,
     true
   );
+  const featuredImage = event.url.origin + '/images/' + article.slug + '.jpg';  
+
+  const linketysplitMetaTags =  linketysplit.getMetaTagHtml({
+    enabled: true,
+    articleTitle: article.title,
+    articleDescription: article.description,
+    articleImage: featuredImage,
+    publishedTime: article.publishedDate
+  });
 
   return {
     article,
     linketySplitPurchaseUrl,
-    linketySplitShareUrl
+    linketySplitShareUrl,
+    linketysplitMetaTags,
+    featuredImage
   };
 };

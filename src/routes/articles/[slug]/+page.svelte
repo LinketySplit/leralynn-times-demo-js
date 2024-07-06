@@ -12,8 +12,8 @@
   <meta name="description" content={article.description} />
   <meta name="og:title" content={article.title} />
   <meta name="og:description" content={article.description} />
-  <meta name="og:image" content={`${origin}/images/${article.slug}.jpg`} />
- 
+  <meta name="og:image" content={data.featuredImage} />
+  {@html data.linketysplitMetaTags}
 </svelte:head>
 
 <main class="container my-5">
