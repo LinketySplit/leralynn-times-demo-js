@@ -20,10 +20,17 @@ export const load = async (event: PageServerLoadEvent) => {
 
   const linketysplitMetaTags =  linketysplit.getMetaTagHtml({
     enabled: true,
-    articleTitle: article.title,
-    articleDescription: article.description,
-    articleImage: featuredImage,
-    publishedTime: article.publishedDate
+    title: article.title,
+    description: article.description,
+    image: featuredImage,
+    publishedTime: article.publishedDate,
+    pricing: {
+      price: 39,
+      discounts: [
+        {minimumQuantity: 10, discountPercentage: 10},
+        {minimumQuantity: 25, discountPercentage: 20}
+      ]
+    }
   });
 
   return {
