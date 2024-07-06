@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@linketysplit/linketysplit-js':
-        specifier: npm:@jsr/linketysplit__linketysplit-js@^0.1.14
-        version: '@jsr/linketysplit__linketysplit-js@0.1.14'
+        specifier: npm:@jsr/linketysplit__linketysplit-js@^0.1.15
+        version: '@jsr/linketysplit__linketysplit-js@0.1.15'
       '@ngneat/falso':
         specifier: ^7.2.0
         version: 7.2.0
@@ -291,8 +291,8 @@ packages:
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
 
-  '@jsr/linketysplit__linketysplit-js@0.1.14':
-    resolution: {integrity: sha512-9nH1Y3V8SJF/5JyJKLX/0fQouOPKJd7LrRcPwq9PhEMSU80565eyuxR6VErT3qduLNlugx1JHgHLdKmakcQSWw==, tarball: https://npm.jsr.io/~/11/@jsr/linketysplit__linketysplit-js/0.1.14.tgz}
+  '@jsr/linketysplit__linketysplit-js@0.1.15':
+    resolution: {integrity: sha512-OSV95su4ZVZpj7ZegS+xEhu8PX44aItwBbgOYjOt3MXqhWr7d1VVANuE++CikGnx6bxtVoebtNrM2ZNyokmVmA==, tarball: https://npm.jsr.io/~/11/@jsr/linketysplit__linketysplit-js/0.1.15.tgz}
 
   '@mapbox/node-pre-gyp@1.0.11':
     resolution: {integrity: sha512-Yhlar6v9WQgUp/He7BdgzOz8lqMQ8sU+jkCq7Wx8Myc5YFJLbEe7lgui/V7G1qB1DJykHSGwreceSaD60Y0PUQ==}
@@ -1885,7 +1885,7 @@ snapshots:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
 
-  '@jsr/linketysplit__linketysplit-js@0.1.14':
+  '@jsr/linketysplit__linketysplit-js@0.1.15':
     dependencies:
       '@types/node': 18.11.18
       jose: 5.6.2

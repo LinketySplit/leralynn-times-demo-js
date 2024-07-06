@@ -40,7 +40,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@linketysplit/linketysplit-js": "npm:@jsr/linketysplit__linketysplit-js@^0.1.14",
+    "@linketysplit/linketysplit-js": "npm:@jsr/linketysplit__linketysplit-js@^0.1.15",
     "@ngneat/falso": "^7.2.0",
     "@sindresorhus/slugify": "^2.2.1",
     "bootstrap": "^5.3.3",
