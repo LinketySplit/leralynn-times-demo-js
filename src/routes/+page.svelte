@@ -1,6 +1,5 @@
 <script lang="ts">
   let { data } = $props();
-  let user = $derived(data.user);
   let postsOnPage = $derived(data.postsOnPage);
   let page = $derived(data.page);
   let pageCount = $derived(data.pageCount);
